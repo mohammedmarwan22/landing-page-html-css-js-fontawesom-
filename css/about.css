@@ -1,0 +1,24 @@
+/* about us section*/
+.about-container{
+    
+    justify-content: flex-start;
+}
+
+.about-container .about-left-side{
+    flex: 1;
+    margin-right: 10px;
+}
+
+.about-left-side h1{
+    font-size: 25px;    
+    
+}
+.about-container .about-right-side{
+    flex: 1  ;
+     margin-left: 10px;
+}
+.about-right-side>img{
+    width: 100%;
+    height: 100%;   
+    
+}

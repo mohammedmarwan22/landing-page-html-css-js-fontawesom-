@@ -1,0 +1,147 @@
+/* services section*/
+
+
+.service-container {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(2,1fr);
+    grid-gap:20px;
+    
+    
+}
+.service-item{
+   
+    justify-content: flex-start;
+    align-content: center;
+}
+.service-item>i{
+    padding: 20px;
+    align-self:center;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,.1);
+    margin-top: -60px;
+    transition: .5s;
+    color: var(--subcolor);
+     
+    
+}
+
+.service-item:hover.service-item>i{
+    background-color: var(--subcolor);
+    color: var(--maincolor);
+    animation-name: spin;
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-iteration-count:1;
+} 
+.service-item .item-content{
+    width: 100%;
+    height: 100%; 
+    margin-left: 10%;
+    margin-top: 0;
+}
+.item-content .desc:first-letter{
+color: rgba(0,0,0,.9);
+}
+.item-content .desc:first-child{
+    font-size:20px;
+    margin: 0;
+}
+
+.progress-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.left-side{
+    flex:1;
+}
+
+
+.left-side .progress-item{
+   width: 80%;
+    height: 20px;
+    background-color: lightgray;
+    margin: 15px 0;
+    
+    
+    
+      
+}
+ .left-side .progress-item .progress-value{
+   
+    height: 100%;
+    text-align: right;
+    background-color: var(--subcolor);
+    display: inline-block;
+    font-size: 15px;
+    color:var(--maincolor);
+     padding-right: 10px;
+   
+}
+.v1{
+     width: 95%;
+}
+.v2{
+     width: 80%;
+}
+.v3{
+     width: 60%;
+}
+.v4{
+     width: 70%;
+}
+.progress-desc{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: rgba(0,0,0,.9);  
+}
+
+.left-side .progress-item,.progress-desc{
+    margin-left: -100%;
+    animation-name: progress;
+    animation-duration: .7s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    transition: .5s;
+    animation-play-state: paused;
+
+}
+.item1{
+    animation-delay:..1s;
+}
+.item2{
+    animation-delay:..2s;
+}
+.item3{
+    animation-delay:.3s;
+}
+.item4{
+    animation-delay:.4s;
+}
+
+
+
+
+.right-side{
+    flex:1;
+    text-align: center; 
+    overflow: hidden;
+}
+.right-side>img{
+    width: 80%;
+    height:90% ;
+    margin: 10px;
+    transform: translate(0,110%);
+    transition: .5s;
+    animation-name:photo;
+    animation-direction: normal;
+    animation-duration: .7s;
+    animation-delay: .1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;  
+    animation-play-state: paused;
+}

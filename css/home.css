@@ -1,0 +1,166 @@
+header{
+    width: 100%;
+    height: 100%;
+   
+    
+    
+    
+    
+      
+}
+.nav-bar .logo{
+      
+    cursor: pointer;
+    width: auto;
+    flex: .1;
+    
+}
+.close-icon{
+    
+    color: whitesmoke;
+     visibility: hidden;
+    
+}
+.bars-icon{
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px 0;
+    padding: 5px;
+    transition:  color.5s;
+    visibility: hidden;
+    
+}
+.bars-icon:hover, .close-icon:hover,aside ul li a:hover{
+    color: var(--subcolor);
+}
+.nav-container{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-color: rgba(0,0,0,.8);
+  
+    
+}
+header nav,header nav ul{
+    
+    justify-content: space-between;
+    
+    
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+   
+    flex-wrap: wrap;
+    flex: .9;
+   
+}
+header nav ul li{
+    flex: 1;
+     text-align: center;
+    
+}
+
+.nav-bar ul li a{
+    padding: 5px 10px;
+    margin: 0 2px;
+    color: var(--maincolor);
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: .5s;
+    
+    
+    
+}
+.active:first-child{
+    color: var(--subcolor); 
+}   
+.nav-bar ul li a:hover{
+    color:var(--subcolor);
+}
+
+
+
+
+/* slider */
+header .slide-container{   
+   width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: -25px;
+    
+}
+.slide-container .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    background-color: rgba(0,0,0,.5);
+    
+}
+.slide-container img{
+   width: 100%;
+    height: 100%;
+      
+    margin: 0;
+
+    
+    
+    
+}
+.overlay .description{
+    width: 50%;
+    height: auto;
+    margin-left: 10%;
+    text-align: left;
+    transition: .1s;
+
+    margin-top: 23%;
+}
+.description h3,.description h1, .description p{
+    color: var(--maincolor);
+    text-transform: capitalize;
+   word-spacing: 7px; 
+    margin: 0;
+}   
+.description>h1{
+    font-size: 50px;    
+}
+.description>h3{
+    font-size: 30px;
+    
+    
+}
+.overlay .right-arrow,.left-arrow{
+    color: var(--maincolor);
+    padding: 10px 12px;
+    background: var(--subcolor);    
+    position: absolute;
+    top: 50%;
+    transition:.5s;
+}
+.overlay .right-arrow{
+    right: -50px ;
+}
+.overlay .left-arrow{
+    left: -50px ;
+}
+.overlay:hover .right-arrow {
+    right:0;
+    
+}
+.overlay:hover .left-arrow{
+    left: 0;
+}
+.overlay .right-arrow:hover ,.overlay .left-arrow:hover{
+    color: gray;
+}
+
